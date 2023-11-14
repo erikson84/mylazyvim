@@ -1,0 +1,12 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.editor.navic",
+    "lazyvim.plugins.extras.lang.elixir",
+    "lazyvim.plugins.extras.test.core",
+    "lazyvim.plugins.extras.util.project"
+  ],
+  "news": {
+    "NEWS.md": "2123"
+  },
+  "version": 2
+}
