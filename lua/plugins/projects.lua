@@ -1,6 +1,8 @@
 return {
   "ahmedkhalf/project.nvim",
-  opts = {
-    patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "package.json", "mix.exs" },
-  },
+  config = function()
+    require("project_nvim").setup({
+      patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "package.json", "mix.exs" },
+    })
+  end,
 }

@@ -5,7 +5,6 @@
     "lazyvim.plugins.extras.editor.symbols-outline",
     "lazyvim.plugins.extras.lang.elixir",
     "lazyvim.plugins.extras.test.core",
-    "lazyvim.plugins.extras.ui.mini-animate",
     "lazyvim.plugins.extras.util.project"
   ],
   "news": {
