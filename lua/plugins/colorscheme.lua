@@ -4,6 +4,7 @@ return {
     lazy = true,
     name = "catppuccin",
     opts = {
+      transparent_background = false,
       integrations = {
         aerial = true,
         alpha = true,

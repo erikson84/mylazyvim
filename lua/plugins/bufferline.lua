@@ -2,7 +2,7 @@ return {
   "akinsho/bufferline.nvim",
   opts = {
     options = {
-      separator_style = "slope",
+      separator_style = "slant",
     },
   },
 }
