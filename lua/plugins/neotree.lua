@@ -10,6 +10,9 @@ return {
           ["h"] = "close_node",
         },
       },
+      filesystem = {
+        group_empty_dirs = true,
+      },
     },
   },
 }
