@@ -1,33 +1,15 @@
 return {
-  "nvim-java/nvim-java",
-  dependencies = {
-    "nvim-java/lua-async-await",
-    "nvim-java/nvim-java-refactor",
-    "nvim-java/nvim-java-core",
-    "nvim-java/nvim-java-test",
-    "nvim-java/nvim-java-dap",
-    "MunifTanjim/nui.nvim",
-    "neovim/nvim-lspconfig",
-    "mfussenegger/nvim-dap",
-    {
-      "williamboman/mason.nvim",
-      opts = {
-        registries = {
-          "github:nvim-java/mason-registry",
-          "github:mason-org/mason-registry",
-        },
-      },
-    },
-    {
-      "williamboman/mason-lspconfig.nvim",
-      opts = {
-        handlers = {
-          ["jdtls"] = function()
-            require("java").setup()
-          end,
-        },
-      },
+  {
+    "mfussenegger/nvim-jdtls",
+    ---@type lspconfig.options.jdtls
+    ---@diagnostic disable-next-line: missing-fields
+    opts = {
+      jdtls = function(opts)
+        local install_path = require("mason-registry").get_package("jdtls"):get_install_path()
+        local jvmArg = "-javaagent:" .. install_path .. "/lombok.jar"
+        table.insert(opts.cmd, "--jvm-arg=" .. jvmArg)
+        return opts
+      end,
     },
   },
-  opts = {},
 }
