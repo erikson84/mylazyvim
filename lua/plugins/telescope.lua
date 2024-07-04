@@ -7,6 +7,7 @@ return {
         filename_first = {
           reverse_directories = false,
         },
+        truncate = 3,
       },
     },
   },
