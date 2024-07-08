@@ -1,7 +1,7 @@
 return {
   {
     "folke/noice.nvim",
-    require("noice").setup({
+    opts = {
       routes = {
         {
           filter = {
@@ -12,6 +12,6 @@ return {
           opts = { skip = true },
         },
       },
-    }),
+    },
   },
 }
