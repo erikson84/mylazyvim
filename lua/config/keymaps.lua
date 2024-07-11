@@ -8,3 +8,5 @@ local lazyterm = function()
 end
 vim.keymap.set("n", "<c-\\>", lazyterm, { desc = "Terminal (root dir)" })
 vim.keymap.set("t", "<C-\\>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+vim.keymap.del("n", "<leader><space>")
+vim.keymap.set("n", "<leader><space>", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
