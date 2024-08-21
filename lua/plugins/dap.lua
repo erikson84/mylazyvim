@@ -31,6 +31,7 @@ return {
         name = "Launch Chrome",
         url = "http://localhost:4200",
         sourceMaps = true,
+        webRoot = "${workspaceFolder}/frontend"
       })
     end
   end,
