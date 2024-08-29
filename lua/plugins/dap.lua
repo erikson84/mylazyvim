@@ -31,8 +31,16 @@ return {
         name = "Launch Chrome",
         url = "http://localhost:4200",
         sourceMaps = true,
-        webRoot = "${workspaceFolder}/frontend"
+        webRoot = "${workspaceFolder}/frontend",
       })
     end
+    dap.configurations["java"] = dap.configurations["java"] or {}
+    table.insert(dap.configurations["java"], {
+      type = "java",
+      name = "Debug (Attach)",
+      request = "attach",
+      hostName = "localhost",
+      port = 50555,
+    })
   end,
 }
