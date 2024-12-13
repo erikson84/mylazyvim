@@ -10,6 +10,12 @@ return {
         alpha = true,
         cmp = true,
         dashboard = true,
+        dap = true,
+        dap_ui = true,
+        dropbar = {
+          enabled = true,
+          color_mode = true, -- enable color for kind's texts, not just kind's icons
+        },
         flash = true,
         gitsigns = true,
         grug_far = true,
@@ -36,7 +42,8 @@ return {
         noice = true,
         notify = true,
         semantic_tokens = true,
-        telescope = true,
+        snacks = true,
+        telescope = { enabled = true },
         treesitter = true,
         treesitter_context = true,
         which_key = true,
