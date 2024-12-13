@@ -14,7 +14,7 @@ return {
         dap_ui = true,
         dropbar = {
           enabled = true,
-          color_mode = true, -- enable color for kind's texts, not just kind's icons
+          color_mode = false, -- enable color for kind's texts, not just kind's icons
         },
         flash = true,
         gitsigns = true,
