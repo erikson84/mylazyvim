@@ -6,7 +6,7 @@ return {
       ---@type lspconfig.options
       servers = {
         emmet_language_server = {
-          filetypes = { "heex", "eex" },
+          filetypes = { "heex", "eex", "html", "htmlangular" },
           init_options = {
             html = {
               options = {
