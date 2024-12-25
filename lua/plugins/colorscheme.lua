@@ -9,6 +9,7 @@ return {
         aerial = true,
         alpha = true,
         cmp = true,
+        blink_cmp = true,
         dashboard = true,
         dap = true,
         dap_ui = true,
