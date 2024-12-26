@@ -13,6 +13,12 @@ return {
       filesystem = {
         group_empty_dirs = true,
       },
+      buffers = {
+        group_empty_dirs = true,
+      },
+      git_status = {
+        group_empty_dirs = true,
+      },
     },
   },
 }
