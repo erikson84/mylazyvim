@@ -29,9 +29,11 @@ return {
         type = "pwa-chrome",
         request = "launch",
         name = "Launch Chrome",
-        url = "http://localhost:4200",
+        url = "http://localhost:4200/ep-atos-prep-web",
         sourceMaps = true,
-        webRoot = "${workspaceFolder}/frontend",
+        protocol = "inspector",
+        cwd = vim.fn.getcwd(),
+        webRoot = vim.fn.getcwd() .. "/frontend",
       })
     end
     dap.configurations["java"] = dap.configurations["java"] or {}
