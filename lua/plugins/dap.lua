@@ -32,8 +32,8 @@ return {
         url = "http://localhost:4200/ep-atos-prep-web",
         sourceMaps = true,
         protocol = "inspector",
-        cwd = vim.fn.getcwd(),
-        webRoot = vim.fn.getcwd() .. "/frontend",
+        cwd = "${workspaceFolder}/frontend",
+        webRoot = "${workspaceFolder}/frontend",
       })
     end
     dap.configurations["java"] = dap.configurations["java"] or {}
