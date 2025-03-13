@@ -21,8 +21,6 @@ return {
     for _, lang in ipairs({
       "typescript",
       "javascript",
-      "typescriptreact",
-      "javascriptreact",
     }) do
       dap.configurations[lang] = dap.configurations[lang] or {}
       table.insert(dap.configurations[lang], {
@@ -30,9 +28,6 @@ return {
         request = "launch",
         name = "Launch Chrome",
         url = "http://localhost:4200/ep-atos-prep-web",
-        sourceMaps = true,
-        protocol = "inspector",
-        cwd = "${workspaceFolder}/frontend",
         webRoot = "${workspaceFolder}/frontend",
       })
     end
