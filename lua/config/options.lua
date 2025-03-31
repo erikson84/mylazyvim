@@ -4,4 +4,5 @@
 if vim.loop.os_uname().sysname == "Windows_NT" then
   LazyVim.terminal.setup("pwsh")
   vim.g.autoformat = false
+  vim.o.shellslash = false
 end
