@@ -6,3 +6,9 @@ if vim.loop.os_uname().sysname == "Windows_NT" then
   vim.g.autoformat = false
   vim.o.shellslash = false
 end
+
+vim.diagnostic.config({
+  virtual_lines = {
+    current_line = true,
+  }
+})
