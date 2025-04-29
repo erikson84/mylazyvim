@@ -2,7 +2,10 @@ return {
   "akinsho/bufferline.nvim",
   opts = {
     options = {
-      separator_style = "slant",
+      show_tab_indicators = true,
+      indicator = {
+        style = 'icon',
+      },
     },
   },
 }
